@@ -1,0 +1,50 @@
+[
+    {
+        "title": "1",
+        "name": "enjoying a field trip",
+        "image": "assets/images/exercise1/1.png",
+        "value": "2",
+        "answer": "2",
+        "attribute": "readonly=readonly"
+    },
+    {
+        "title": "2",
+        "name": "working on computers",
+        "image": "assets/images/exercise1/2.png",
+        "value": "",
+        "answer": "3",
+        "attribute": ""
+    },
+    {
+        "title": "3",
+        "name": "taking a test",
+        "image": "assets/images/exercise1/3.png",
+        "value": "",
+        "answer": "4",
+        "attribute": ""
+    },
+    {
+        "title": "4",
+        "name": "doing a project",
+        "image": "assets/images/exercise1/4.png",
+        "value": "",
+        "answer": "1",
+        "attribute": ""
+    },
+    {
+        "title": "5",
+        "name": "giving a presentation",
+        "image": "assets/images/exercise1/5.png",
+        "value": "",
+        "answer": "5",
+        "attribute": ""
+    },
+    {
+        "title": "6",
+        "name": "practicing a yoga",
+        "image": "assets/images/exercise1/6.png",
+        "value": "",
+        "answer": "6",
+        "attribute": ""
+    }
+]

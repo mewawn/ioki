@@ -1,0 +1,38 @@
+[
+    {
+        "name": "foggy",
+        "image": "assets/images/exercise2/1.png",
+        "value": "foggy",
+        "attribute": "readonly=readonly"
+    },
+    {
+        "name": "raining",
+        "image": "assets/images/exercise2/2.png",
+        "value": "",
+        "attribute": ""
+    },
+    {
+        "name": "sunny",
+        "image": "assets/images/exercise2/3.png",
+        "value": "",
+        "attribute": ""
+    },
+    {
+        "name": "cloudy",
+        "image": "assets/images/exercise2/4.png",
+        "value": "",
+        "attribute": ""
+    },
+    {
+        "name": "windy",
+        "image": "assets/images/exercise2/5.png",
+        "value": "",
+        "attribute": ""
+    },
+    {
+        "name": "snowing",
+        "image": "assets/images/exercise2/6.png",
+        "value": "",
+        "attribute": ""
+    }
+]
