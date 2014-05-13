@@ -44,5 +44,6 @@ define(
                 el: '#ioki2',
                 collection: secondCollection
             });
+        excerciseView.render();
     }
 );

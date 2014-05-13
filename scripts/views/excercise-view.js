@@ -20,13 +20,6 @@ define(
                 this.utilsView = options.utilsView;
                 this.symbolsSection = this.$('#weather-symbols');
                 this.checkExercise1 = this.$('#check-exercise-1');
-                this.collection.fetch({
-                    success: function(collection) {
-                        _.each(collection.models, function (item) {
-                            that.showItems(item.get('name'), item.get('image'), item.get('value'), item.get('attribute'));
-                        });
-                    }
-                });
                 this.$el.on('focusin', '.word', function () {
                     that.utilsView.triggerExcerciseStatus(that.checkExercise1, false);
                 });
@@ -38,8 +31,13 @@ define(
                 "focusout .word": "saveChanges"
             },
 
-            showItems: function (name, image, value, attribute) {
-                var item = tpl({'name': name, 'image': image, 'value': value, 'attribute': attribute });
+            showItems: function (item) {
+                var item = tpl({
+                    'name': item.get('name'),
+                    'image': item.get('image'),
+                    'value': item.get('value'),
+                    'attribute': item.get('attribute')
+                });
                 this.symbolsSection.append(item);
             },
 
@@ -52,7 +50,6 @@ define(
                     }
                 });
             },
-
 
             validate: function () {
                 this.utilsView.triggerExcerciseStatus(this.checkExercise1, true);
@@ -69,6 +66,17 @@ define(
                             .addClass('err');
                     }
                 }, this);
+            },
+
+            render: function () {
+                var that = this;
+                this.collection.fetch({
+                    success: function(collection) {
+                        _.each(collection.models, function (item) {
+                            that.showItems(item);
+                        });
+                    }
+                });
             }
 
         });
